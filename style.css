@@ -1,0 +1,82 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.chess-board {
+    width: 800px;
+    height: 800px;
+    border: 2px solid black;
+}
+
+.row {
+    display: flex;
+}
+
+.row>div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.row-1>div:nth-child(even),
+.row-3>div:nth-child(even),
+.row-5>div:nth-child(even),
+.row-7>div:nth-child(even) {
+    background-color: green;
+}
+
+.row-1>div:nth-child(odd),
+.row-3>div:nth-child(odd),
+.row-5>div:nth-child(odd),
+.row-7>div:nth-child(odd) {
+    background-color: rgba(0, 128, 0, 0.504);
+}
+
+.row-2>div:nth-child(odd),
+.row-4>div:nth-child(odd),
+.row-6>div:nth-child(odd),
+.row-8>div:nth-child(odd) {
+    background-color: green;
+}
+
+.row-2>div:nth-child(even),
+.row-4>div:nth-child(even),
+.row-6>div:nth-child(even),
+.row-8>div:nth-child(even) {
+    background-color: rgba(0, 128, 0, 0.504);
+}
+
+.row-1>div,
+.row-2>div {
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.829);
+    transition: 0.4s ease;
+}
+
+.row-7>div,
+.row-8>div {
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.829);
+    transition: 0.4s ease;
+}
+
+.row>div:hover {
+    font-size: 70px;
+}
